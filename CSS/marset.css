@@ -1,0 +1,2051 @@
+/*CSS重置样式*/
+
+div,h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd,span,p,img,a,body,input,text,textarea,button{
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
+img{
+		display: block;
+	}
+body{
+		font-size: 12px;
+		color: #3c3c3c;
+		font-family: "微软雅黑";
+	}
+h1,h2,h3,h4,h5,h6{
+		font-size: 100%;
+	}
+ul,ol{
+		list-style: none;
+	}
+a{
+		color: #3c3c3c;
+		text-decoration: none;
+	}
+a:hover{
+		color: #F40;
+		text-decoration: none;
+	}
+@font-face {
+				font-family: 'mobile';
+				src:url('fontIcons/fonts/icomoon.eot?5d9tqb');
+				src:url('fontIcons/fonts/icomoon.eot?#iefix5d9tqb') format('embedded-opentype'),
+					url('fontIcons/fonts/icomoon.woff?5d9tqb') format('woff'),
+					url('fontIcons/fonts/icomoon.ttf?5d9tqb') format('truetype'),
+					url('fontIcons/fonts/icomoon.svg?5d9tqb#icomoon') format('svg');
+				font-weight: normal;
+				font-style: normal;
+			}	
+	.service_content .iconfont{
+			font-famliy: "mobile";
+			color: #f40;
+		}
+/*清除浮动*/
+.clearfix:before,.clearfix:after{
+		content: "";
+		display: table;
+	}
+.clearfix:after{
+		clear:  both;
+	}
+.clearfix{
+		zoom: 1;
+	}
+	
+	
+	/*小三角*/
+
+.arrow_bo,.arrow_top{
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 0;
+		height: 0;
+		border-width: 5px;
+		border-style: solid dashed dashed dashed;
+		border-color: #9c9c9c transparent transparent transparent;
+		font-size: 0;
+		overflow: hidden;
+	}	
+.red_arrow{	
+		border-color: #f40 transparent transparent transparent;
+	}
+.arrow_top{
+		border-top-color: #f5f5f5;
+		top: -2px;
+	}
+	
+		
+	/*css开始*/
+	/*头部导航*/
+.site-nav{
+		width: 100%;
+		height: 35px;
+		line-height: 35px;
+		border-top: 2px solid #aaaaab;
+		border-bottom: 1px solid #eee;
+		background-color: #f5f5f5;
+		z-index: 1000;
+	}
+.site-nav-fixed{
+		position: fixed;
+		top: 0px;
+	}
+.content-fixed{
+		padding-top: 130px;
+	}
+.content-fixed  .head{
+		position: fixed;
+		top: 35px;
+		left: 0;
+		z-index: 1001;
+		width: 100%;
+		height: 35px;
+		padding: 7px 0;
+		border-bottom: 1px solid #e8e8e8;
+		background-color: #fff;
+		overflow: visible;
+		box-shadow: rgba(0,0,0,.1) 0 1px 5px;
+		display: none;
+}
+.head{
+		padding-top: 30px;
+		height: 100px;
+		overflow: hidden;
+		display: none;
+	}
+.head-wrap{
+		margin: 0 auto;
+		width: 1190px;
+	}
+.search-hd a{
+		display: block;
+		width: 80px;
+		height: 33px;
+		background: url(../images/spricte.png) no-repeat 0 -80px;
+	}
+.head_search-select{
+		width: 73px;
+		height: 32px;
+		line-height: 32px;
+		border: 1px solid #e5e5e5;
+		background-color: #f6f6f6;
+		overflow: hidden;
+		z-index: 200;
+		position: absolute;
+		top: 3px;
+		left: 3px;
+	}
+.head_search-select:hover{
+		height: auto;
+	}
+.head_search-select li{
+		padding-left: 15px;
+		cursor: pointer;
+	}
+.head_search-select li a:hover{
+		color: #c60000;
+	}
+.head-wrap .input_text{
+		background-position: 80px center!important;
+	}
+.head-wrap .header_m_middle_ff  label{
+		position: absolute;
+		top: 8px;
+		left: 100px;
+	}
+.head-wrap .header_m_middle{
+		position: absolute;
+		left: 352px;
+		top: 5px;
+	}
+.head-wrap .arrow{
+		position: absolute;
+		left: 50px;
+		top: 13px;
+	}
+
+.tmall-search-panel  .header_m_middle_oranger{
+		background-color: #c60000;
+	}
+.tmall-search-panel  .btn{
+		background-color: #c60000;
+	}
+.baobei  .current{
+		background-color: #c60000!important;
+	}
+.header_m_top_list .selceted{
+		background-color: #c60000;
+	}
+	/*版心*/
+.content{
+		width: 1190px;
+		margin: 0 auto;
+		position: relative;
+	}
+.site-nav-bd-l{
+		float: left;
+		width: 230px;
+		height: 35px;
+	}
+.site-nav-bd-l li{
+		float: left;
+		margin-right: 20px;
+	}
+.h{
+		color: #F22E00;
+	}
+.site-nav-bd-l .h{
+		padding: 0 6px;
+	}
+.site-nav-bd-l .h:hover{
+		color: #F22E00;
+	}
+.site-nav-bd-r{
+		float: right;
+		height: 35px;
+	}
+.site-nav-bd-r li{
+		float: left;
+		position: relative;
+	}
+.site-nav-bd-r li a{
+		float: left;
+		padding: 0 20px;
+	}
+.site-nav-bd-r .menu-bd{
+		z-index: 10001;
+		position: relative;
+		display: none;
+		margin-top: 35px;
+	}
+.site-nav-bd-r .menu-bd-panel{
+		padding: 8px 0;
+	}
+.site-nav-bd-r .menu-bd .menu-bd-panel{
+		position: absolute;
+		left: -1px;
+		top: 0;
+		line-height: normal;
+		border: 1px solid #eee;
+		background-color: #fff;
+	}
+.site-nav-bd-r .menu-bd .menu-bd-panel a{
+		display: block; 
+		width: 80px; 
+		line-height: 28px; 
+		color: #6c6c6c; 
+		padding: 0 5px; 
+		white-space: nowrap;	
+	}
+.site-nav-bd-r .menu-bd .menu-bd-panel a:hover{
+		color: #6c6c6c;
+		background-color: #f5f5f5;
+	}
+	
+.site-nav-bd-r .cart,.site-nav-bd-r .collet,.site-nav-bd-r .navigation{
+		background: url(../images/sprice.png) no-repeat 0px -14px;
+		padding-left: 16px;
+	}
+.site-nav-bd-r .collet{
+		background-position: 0px -40px;
+	}
+.site-nav-bd-r .navigation{
+		background-position: 0px -64px;
+	}
+
+#me,#cart{
+		padding-right: 10px;
+	}
+#cart .arrow{
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		top: 15px;
+		left:  70px;
+	}
+/*.arrow{
+		transition: transform 1s ease-in 0s;
+		-webkit-transition: transform 1s ease-in 0s;
+	}
+.site-nav-bd-r li:hover .arrow{
+		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+	}	*/
+#mai .arrow,#navigation .arrow,#me .arrow{
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		top: 15px;
+		left:  80px;
+	}
+#collet .arrow{
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		top: 15px;
+		left:  65px;
+	}	
+.line{
+		color: #eee;
+	}
+	
+	/*头部*/
+.header{
+		padding-top: 30px;
+		height: 100px;
+		overflow: hidden;
+	}	
+.header_l{
+		float: left;
+		width: 250px;
+		height: 100px;
+		overflow: hidden;
+	}
+	/*搜索*/
+.header_m{
+		float: left;
+		width: 760px;
+		height: 90px;
+		margin-top: 7px;
+		margin-left: 25px;
+	}
+.header_m_top{
+		height: 25px;
+		line-height: 25px;
+	}
+.header_m_top li{
+		float: left;
+		width: 50px;
+		text-align: center;
+		cursor: pointer;
+	}
+.header_m_top li:hover{
+		background-color: #f9e6e6;
+	}
+.header_m_top .current{
+		background-color: #ff5400;
+		color: #fff;
+		font-weight: 700px;
+	}
+.header_m_top .current:hover{
+		background-color: #ff5400;
+		color: #fff;
+	}
+.header_m_middle{
+		height: 40px;
+	}
+.header_m_middle_oranger{
+		float: left;
+		width: 618px;
+		height: 34px;
+		background-color: #ff5500;
+		padding: 3px 0 3px 3px;
+	}
+.header_m_middle_ff{
+		position: relative;
+		height: 34px;
+		background-color: #fff;
+		overflow: hidden;
+	}
+.header_m_middle_ff  label{
+		position: absolute;
+		top: 5px;
+		left: 32px;
+		color: #ccc;
+	}
+.header_m_middle_ff .input_text{
+		padding: 6px 0 6px 11px;
+		width: 607px;
+		height: 22px;
+		line-height: 22px;
+		background: url(../images/fa.jpg) no-repeat 11px center;
+	}
+	/*搜索*/
+.btn{
+		float: left;
+		width: 100px;
+		height: 40px;
+		background-color: #ff4200;
+		color: #fff;
+		font-size: 16px;
+	}
+	/*高级搜索*/
+.senior{
+		float: right;
+		text-align: right;
+		width: 35px;
+		height: 40px;
+		line-height: 18px;
+		position:relative;
+	}
+.header_m_ft{
+		float: left;
+		height: 30px;
+		line-height: 30px;
+	}
+.header_m_ft a{
+	margin-right: 6px;
+	}
+.header_m_ft .h:hover{
+		color: #F22E00;
+	}
+.more{
+		display: inline-block;
+		width: 39px;
+		height: 18px;
+		line-height: 18px;
+		border: 1px solid #e8e8e8;
+		padding-left: 3px;
+		position: relative;
+	}
+.more:hover{
+		background-color: #f50;
+		color: #fff;
+	}
+	
+	/*更多小三角*/
+.more_arrow{
+		width: 8px;
+		height: 8px;
+		position: absolute;
+		top: 4px;
+		right: 2px;
+	}
+.more_arrow_bo,.more_arrow_top{
+		display: block;
+		width: 0;
+		height: 0;
+		border-width: 5px;
+		border-color: transparent transparent transparent #F1F1F1;
+		border-style: dashed dashed dashed solid;
+		font-size: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+	}
+.more_arrow_top{
+		border-left-color: #fff;
+		left: -2px;
+	}
+.more:hover .more_arrow_top{
+		border-left-color: #f50;
+	}
+	
+	/*二维码*/
+.erweima{
+		float: right;
+		width: 78px;
+		height: 108px;
+		margin-top: -20px;
+		padding: 4px 8px 0;
+		border: 1px solid #e8e8e8;
+		position: relative;
+	}
+.erweima span{
+		width: 20px;
+		height: 20px;
+		text-align: center;
+		padding-left: 15px;
+	}
+#close_erweima{
+		cursor: pointer;
+		width: 18px;
+		height: 18px;
+		border: 1px solid #e8e8e8;
+		background: url(../images/spricte.png) no-repeat -150px -361px;
+		position: absolute;
+		top: -1px;
+		left: -20px;
+	}
+#close_erweima:hover{
+		background-color: #f40;
+	}
+	
+	
+	/*服务部分开始*/
+.wrap{
+		margin-top: 15px;
+	}
+	/*左侧导航*/
+.servie_site{
+		float: left;
+		width: 190px;
+		height: 526px;
+		background-color: #fff;
+	}	
+	/*上主体*/
+.servie_site_bd{
+		height: 490px;
+		box-shadow: 2px 2px #eeeee0;
+	}
+.servie_site_bd h2{
+		height: 25px;
+		background-color: #f40;
+		padding: 10px 0 0 15px;
+	}
+.servie_site_bd h2 s{
+		display: block;
+		width: 100px;
+		height: 0;
+		overflow: hidden;
+		padding-top: 16px;
+		background: url(../images/spricte.png) no-repeat 0 -125px;
+		
+	}
+	/*侧边服务主体dl*/
+.servie_bd{
+		height: 454px;
+		border: 1px solid #ff4401;
+		border-top: 0;
+		padding: 0 9px;
+		position: relative;
+	}
+.servie_bd .more{
+		position: absolute;
+		top: 10px;
+		left: 135px;
+	}
+.servie_bd dt{
+		height: 19px;
+		font-size: 15px;
+		font-weight: 700;
+		padding-top: 10px;
+	}
+.servie_bd .zt,.servie_bd .shopping,.servie_bd .sale{
+		display: inline-block;
+		width: 25px;
+		height: 19px;
+		background: url(../images/spricte.png) no-repeat -150px -240px;
+		_margin-right: 5px;
+		vertical-align: middle;
+		margin-top: -7px;
+	}
+.servie_bd .shopping{
+		background-position: -150px -215px;
+	}
+.servie_bd .sale{
+		background-position: -150px -190px;
+	}
+.servie_bd dd{
+		border-bottom: 1px solid #E6E7EB;
+		padding-left: 8px;
+		padding-bottom: 10px;
+		
+		/*解决inline-block白边的问题*/
+		font-size: 0;
+		/*解决inline-block白边的问题，兼容ie6*/
+		/*letter-spacing: -1px;
+		white-spacing: -1px;*/
+		
+	}
+.servie_bd dd a{
+		position: relative;
+		width: 64px;
+		line-height: 24px;
+		display: inline-block;
+		font-size: 12px;
+	}
+.servie_bd dd .c2{
+		width: 54px;
+	}
+.servie_bd dd .c3{
+		width: 38px;
+	}
+.servie_bd .lastdd{
+		border-bottom: 0;
+	}
+.servie_bd dd a .hot{
+		display: block;
+		position: absolute;
+		width: 9px;
+		height: 14px;
+		background: url(../images/hot.gif) no-repeat;
+		top: 0;
+		right: 5px;
+	}
+	/*暴恐音视频*/
+.servie_ft{
+		height: 31px;
+		margin-top: 5px;
+	}
+.servie_ft a{
+		height: 35px;
+		display: block;
+		background: url(../images/spricte.png) no-repeat -191px -291px;
+	}
+.servie_ft a:hover{
+		background-position: -191px -332px;
+	}
+	/*右侧主体*/
+.main{
+		float: right;
+		width: 992px;
+		height: 526px;
+	}
+	/*主导航*/
+.main_nav{
+		height: 34px;
+		border-bottom: 2px solid #f40;
+	}
+.main_nav_l{
+		float: left;
+		height: 28px;
+		padding-top: 4px;
+	}
+.main_nav_l li{
+		float: left;
+		width: 52px;
+		height: 28px;
+		line-height: 28px;
+		text-align: center;
+		margin: 0 10px;
+	}
+.main_nav_l li a{
+		display: block;
+		width: 52px;
+		height: 28px;
+		font-size: 16px;
+		color: #f40;
+		font-weight: 700;
+		padding: 0 3px;
+	}
+.main_nav_l li a:hover{
+		background-color: #f4f4f4;
+	}
+.main_nav_m{
+		float: left;
+		padding-top: 4px;
+	}
+.main_nav_m li{
+		float: left;
+		height: 28px;
+		line-height: 28px;
+		margin: 0 10px;
+	}
+.main_nav_m li a{
+		float: left;
+		display: block;
+		height: 28px;
+		padding:  0 5px;
+		font-size: 14px;
+		font-weight: 700;
+	}
+.main_nav_m li a:hover{
+		background-color: #f4f4f4;
+	}
+.main_nav_m li.pipe{
+		color: #e8e8e8;
+		margin: 0 10px;
+	}
+.main_nav_r{
+		float: right;
+		margin-top: 12px;
+	}
+.main_bd{
+		height: 480px;
+		margin-top: 10px;
+	}
+.main_bd_l{
+		float: left;
+		width: 520px;
+		height: 480px;
+	}
+.main_bd_l .banner{
+		position: relative;
+		width: 520px;
+		height: 280px;
+		/*background: url(../images/banner.jpg) no-repeat;*/
+	}
+.main_bd_l .banner .banner-qie{
+		position: relative;
+		width: 520px;
+		height: 280px;
+		overflow: hidden;
+	}
+.main_bd_l .banner .banner-qie ul{
+		position: absolute;
+		 top: 0;
+		/* left: 0; */
+		 width:3120px;
+	}
+.main_bd_l .banner .banner-qie ul li{
+		float: left;
+	}
+.main_bd_l .subbanner{
+		position: relative;
+		width: 520px;
+		height: 198px;
+		border-top: 1px solid #e8e8e8;
+		border-bottom: 1px solid #e8e8e8;
+		overflow: hidden;
+	}
+.main_bd_l .subbanner .abox{
+		position: relative;
+		width: 520px;
+		height: 198px;
+	}
+.main_bd_l .subbanner .subbanner-pics{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 3640px;
+	}
+.main_bd_l .subbanner .subbanner-pics li{
+		float: left;
+		width: 520px;
+		height: 198px;
+	}
+.main_bd_l .subbanner .subbanner-pics li{
+		float: left;
+	}
+.main_bd_l .subbanner .subbanner-pics .sub-icons{
+		width: 485px;  
+		padding-left: 35px;
+	}
+.main_bd_l .subbanner .subbanner-pics .sub-icons a{
+		display: inline;
+		overflow: hidden;
+		float: left;
+		width: 120px; 
+		height: 52px; 
+		border: 0 none;  
+		padding-top: 10px; 
+		text-align: center;
+	}
+.leftsqure,.rightsqure,.sub_leftsqure,.sub_rightsqure{
+		display:none;
+		width: 40px;
+		height: 40px;
+		background-color: #000;
+		opacity: 0.3;
+		firter:alpha(opacity=30);
+		position: absolute;
+		top: 120px;
+	}
+.leftsqure{
+		left: 5px;
+	}
+.rightsqure{
+		right: 5px;
+	}
+.sub_leftsqure{
+		top: 80px;
+		left: 5px;
+	}
+.sub_rightsqure{
+		top: 80px;
+		right: 5px;
+	}
+.arrow_prew,.arrow_next,.sub_arrow_prew,.sub_arrow_next{
+		display: none;
+		width: 15px;
+		height: 22px;
+		background: url(../images/spricte.png) no-repeat -150px -335px;
+		position: absolute;
+		top: 130px;
+		z-index: 2;
+	}
+.arrow_prew,.sub_arrow_prew{
+		left: 16px;
+	}
+.arrow_next,.sub_arrow_next{
+		background-position: -150px -311px;
+		right: 16px;
+		cursor: pointer;
+	}
+.sub_arrow_prew,.sub_arrow_next{
+		top: 90px;
+	}
+.dian_nav{
+		/*width: 90px;*/
+		height: 15px;
+		position: absolute;
+		bottom: 15px;
+		left: 50%;
+		margin-left: -45px;
+		border-radius: 10px;
+		background-color: rgba(255,255,255,0.3);
+		/*兼容ie6小于19px*/
+		overflow: hidden;
+	}
+.dian_nav li{
+		float: left;
+		width: 9px;
+		height: 9px;
+		border-radius: 50%;
+		background-color: #b7b7b7;
+		margin: 3px;
+		cursor: pointer;
+		overflow: hidden;
+	}
+.dian_nav li.current{
+		background-color: #f40;
+	}
+.main_bd_l .abox a{
+		float: left;
+	}
+.main_bd_m{
+		width: 170px;
+		height: 480px;
+		float: left;
+	}
+.main_bd_m .subbanner_pic{
+		height: 280px;
+	}
+	
+	
+	/*右侧*/
+.main_bd_r{
+		float: right;
+		width: 290px;
+		height: 480px;
+	}
+.main_bd_r .ad{
+		height: 98px;
+		border: 1px solid #e8e8e8;
+		overflow: hidden;
+	}
+.main_bd_r .ad .ad_hd{
+		height: 26px;
+	}
+.ad .ad_hd ul{
+		width: 300px;
+	}
+.ad .ad_hd ul li{
+		float: left;
+		width: 56px;
+		height: 26px;
+		line-height: 26px;
+		text-align: center;
+		border-bottom: 1px solid #e8e8e8;
+		padding: 0 1px;
+	}
+.ad .ad_hd ul li.current{
+		border-left: 1px solid #e8e8e8;
+		border-right: 1px solid #e8e8e8;
+		border-bottom: 0;
+		padding: 0;
+		font-weight: bold;
+	}
+.main_bd_r .ad .ad_bd{
+		height: 50px;
+		margin-top: 12px;
+		padding: 0 10px;
+	}
+.ad_bd ul{
+		display: none;
+	}
+.ad .ad_bd ul li{
+		float: left;
+		width: 134px;
+		height: 24px;
+		line-height: 24px;
+	}
+.main_bd_r .hi{
+		height: 120px;
+		border: 1px solid #f4f4f4;
+		padding: 5px 0 0 10px;
+		margin-top: -1px;
+		background: url(../images/bg.png) no-repeat right top;
+	}
+.hi .hi_hd{
+		position: relative;
+		height: 60px;
+		padding-left: 70px;
+	}
+.first{
+		position: absolute;
+		width: 60px;
+		height: 60px;
+		background: url(../images/spricte.png) no-repeat -150px -80px;
+		top: 0;
+		left: 0;
+	}
+.gold,.club{
+		float: left;
+		position: relative;
+		padding: 8px;
+		border: 1px solid #fdb08e;
+		background-color: #fff0e8;
+		border-radius: 2px;
+		margin-top: 7px;
+		margin-right: 5px;
+		color: #f55732;
+		white-space:nowrap; /*强制一行内显示*/ 
+	}
+.gold{
+		padding-left:27px;
+	}
+.gold a:hover{
+		bakground-color: #ffeadf;
+	}
+.club a:hover{
+		bakground-color: #ffeadf;
+	}
+
+.i_money{
+		position: absolute;
+		width: 18px;
+		height: 18px;
+		top: 7px;
+		left: 4px;
+		background: url(../images/spricte.png) no-repeat -150px -290px;
+	}
+.hi_bd{
+		height: 35px;
+		margin-top: 10px;
+	}
+.hi_bd a{
+		float: left;
+		width: 75px;
+		height: 35px;
+		line-height: 35px;
+		background-color: #f40;
+		color: #fff;
+		text-align: center;
+		border-radius: 5px;
+		margin-right: 5px;
+	}
+.hi_bd a:hover{
+		background-color: #f22d00;
+		color: #fff;
+	}
+.hi_bd .login{
+		width: 100px;
+	}
+/*.people{
+		 width:16px; 
+		 height:16px; 
+		 background-color:#FFF;
+	}*/
+.main_bd_r .service{
+		height: 244px;
+		border: 1px solid #e8e8e8;
+		background-color: #f4f4f4;
+		margin-top: -1px;
+		padding:10px 0 0 12px;
+	}
+.service h3{
+		height: 26px;
+		padding-left: 4px;
+	}
+.service_content li{
+		float: left;
+		display: inline;
+		width: 56px;
+		height: 63px;
+		border: 1px solid #ddd;
+		border-radius: 3px;
+		background-color: #fff;
+		text-align: center;
+		margin-bottom: 10px;
+		margin-right: 10px;
+		position: relative;
+	}
+.service_content li .iconfont{
+		display: block;
+		height: 26px;
+		margin: 6 0px;
+		background: url(../images/tel.png) no-repeat center;
+		margin-top: 5px;
+	}
+.service_content .arrow{
+		position: absolute;
+		top: 50px;
+		left: 23px;
+	}
+.service_content	.arrow_top{
+		border-top-color: #fff;
+	}
+
+
+.hot_point{
+		height: 38px;
+		border: 1px solid #e8e8e8;
+		background-color: #f5f5f5;
+		color: #3c3c3c;
+		margin: 16px 0 11px 0;
+		padding: 13px 54px 13px 17px;
+	}
+.hot_point_title{
+		position: relative;
+		float: left;
+		width: 30px;
+		height: 38px;
+		border-right: 1px solid #d5d5d5;
+		padding-right: 8px;
+		margin-right: 14px;
+		margin-top: 3px;
+	}
+.hot_point_title h4{
+		font-size: 14px;
+		line-height: 18px;
+	}
+	
+	/*小三角*/
+.hot_point_title .more_arrow{
+		position: absolute;
+		top: 14px;
+		left: 40px;
+	}
+.hot_point_title .more_arrow_bo{
+		border-left-color: #d5d5d5;
+	}
+.hot_point_title .more_arrow_top{
+		border-left-color: #f5f5f5;
+	}
+.hot_point_content{
+		float: left;
+		width: 190px;
+		height: 42px;
+		margin-right: 28px;
+		margin-top: 1px;
+		line-height: 20px;
+		overflow: hidden;
+	}
+.hot_point_content a{
+		display: block;
+		float: left;
+		margin-right: 14px;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+.hot_point_xbanner{
+		position: relative;
+		float: left;
+		width: 286px;
+		height: 42px;
+		border-left: 1px solid #e8e8e8;
+	}
+.hot_point_xbanner a{
+		position: absolute;
+		top:-19px;
+		left: 0;
+	}
+.hot_point_banner img{
+		width: 300px;
+		height: 70px;
+	}
+.hot_point_banner{
+		float: left;
+	}
+	
+	
+	/*衣服主体开始*/
+.bdmain{
+		width: 100%;
+	}
+.bdmain_left{
+		float: left;
+		overflow:hidden;
+		width: 890px;
+		margin-right: 12px;
+		display: inline;
+	}
+
+.bdmain_left .cat_wrap{
+		float: left;
+		width: 435px;
+		/*height: 292px;*/
+		margin-bottom: 20px;
+		margin-right: 10px;
+		color: #3c3c3c;
+		overflow: hidden;
+	}
+.cat_wrap_pink .cat_wrap_hd{
+		background-color: #f5619c;
+	}
+.cat_wrap_hd{
+		height: 24px;
+	}
+.cat_wrap_hd h3{
+		float: left;
+		width: 100px;
+		font-size: 16px;
+		line-height: 17px;
+		font-weight: 700;
+		margin-top: 4px;
+		margin-left: 14px;
+		*margin-left: 7px;
+	}
+.cat_wrap_hd h3 a,.cat_wrap_hd h3 span{
+		color: #fff;
+	}
+.cat_wrap_hd h3 a:hover{
+		color: #fff;
+		text-decoration: underline;
+	}
+.act_arrow{
+		position: relative;
+		float: left;
+		width: 116px;
+		height: 17px;
+		background-color: #fff;
+		opacity: 0.8;
+		margin-top: 4px;
+	}
+.act_arrow .act_a{
+		position: absolute;
+		top: 3px;
+		left: -10px;
+		display: block;
+		width: 0;
+		height: 0;
+		border-width: 6px;
+		border-right-color: #fff;
+		border-color: transparent   rgba(255,255,255,0.8) transparent transparent ;
+		border-style: dashed solid dashed dashed ;
+		font-size: 0;
+		overflow: hidden;
+	}
+.act_arrow a{
+		color: #f5619c;
+		padding-left: 5px;
+	}
+.act_arrow a:hover{
+		color: #f5619c;
+		text-decoration: underline;
+	}
+.cat_tags{
+		float: right;
+		margin-right:  14px;
+		_margin-right: 10px;
+		margin-top: 4px;
+	}
+.cat_tags a,.cat_tags span{
+		color: #fff;
+	}
+.cat_tags a:hover{
+		color: #fff;
+		text-decoration: underline;
+	}
+.cat_wrap_bd{
+		height: 260px;
+		border-left: 1px solid #e8e8e8;
+		border-bottom: 1px solid #e8e8e8;
+	}
+.cat_wrap_bd .cat_list{
+		float: left;
+		width: 300px;
+		padding-left: 15px;
+		overflow: hidden;
+	}
+.cat_list .list_item{
+		padding: 10px 0;
+		
+	}
+.bottom_border{
+		border-bottom: 1px solid #eee;
+	}
+.cat_list ul {
+    	margin: 4px 0;
+    	height: 22px;
+    	overflow: hidden;
+    	*zoom: 1
+}
+.cat_list li{
+		float: left;
+		line-height: 22px;
+		padding-right: 12px;
+		color: #6c6c6c;
+		text-decoration: none;
+	}
+.list_item li a{
+		color: #3c3c3c;
+	}
+.list_item li a:hover{
+		color: #f40;
+	}
+.list_item .item_header{
+		width: 52px;
+	}
+.list_item .item_header a{
+		color: #3a3a3a;
+		font-size: 12px;
+		font-weight: 700;
+	}
+.cat_list li .em{
+		color: #f40;
+	}
+.cat_list li .em:hover{
+		text-decoration: underline;
+	}
+.cat_banner{
+		float: right;
+		display: block;
+		width: 100px;
+		height: 260px;
+		overflow: hidden;
+	}
+.cat_banner a{
+		display: block;
+		width: 100px;
+		height: 260px;
+		background: url(../images/y01.jpg) no-repeat 0 0px;
+/*		margin-top:-1px;
+		_margin-top: 0px;*/
+	}
+	
+	
+.cat_wrap_purple .cat_wrap_hd{
+		background-color: #aa73d1;
+	}
+.cat_wrap_purple .act_arrow a{
+		color: #aa73d1;
+	}
+	
+	
+.small_cat_wrapper{
+		height: 226px;
+	}
+.cat_wrap_green .cat_wrap_hd{
+		background-color: #97b921;
+	}
+.small_cat_wrapper .cat_wrap_hd h3{
+		width: 80px;
+	}
+.cat_wrap_green .act_arrow a{
+		color: #97b921;
+	}
+.small_cat_wrapper .cat_wrap_bd{
+		height: 200px;
+	}
+.small_cat_wrapper .cat_list ul{
+		height: 22px;
+		margin: 6px 0;
+		overflow: hidden;
+	}
+.small_cat_wrapper .cat_banner{
+		width: 100px;
+		height: 200px;
+	}
+.small_cat_wrapper .cat_banner a{
+		display: block;
+		width: 100px;
+		height: 200px;
+	}
+	
+	
+.hbanner{
+		display: inline-block;
+		width: 880px;
+		height: 70px;
+		margin-bottom: 20px;
+	}
+	
+.cat_wrap_sky .cat_wrap_hd{
+		background-color: #10c2ce;
+	}
+.cat_wrap_sky .act_arrow a{
+		color: #10c2ce;
+	}
+	
+	
+.cat_wrap_blue .cat_wrap_hd{
+		background-color: #52a0e8;
+	}
+.cat_wrap_blue .act_arrow a{
+		color: #52a0e8;
+		display: block;
+		width: 104px;
+		height: 17px;
+		text-overflow: cilp;
+		overflow: hidden;
+	}
+	
+	
+.cat_wrap_brown .cat_wrap_hd{
+		background-color: #b68571;
+	}
+.cat_wrap_brown .act_arrow a{
+		color: #b68571;
+	}
+	
+	/*右侧*/
+.bdmain_right{
+		display: inline;
+		float: right;
+		width: 288px;
+	}
+.bdmain_right	.discover{
+		overflow:hidden;
+		height: 2060px;
+		padding: 20px 14px;
+		background-color: #f5f5f5;
+		border: 1px solid #e8e8e8;
+		position: relative;
+	}
+.bdmain_right	.s_good_goods{
+		display: inline-block;
+		background: url(../images/spricte.png) no-repeat -250px -125px;
+		vertical-align: middle;
+	}
+.discover dt{
+		margin-bottom: 10px;
+	}
+.discover s{
+		width: 120px;
+		height: 18px;
+		text-indent: -2000em;
+	}
+.bdmain_right	 .goods_content{
+		background-color: #fff;
+		height: 1338px;
+		overflow: visible;
+	}
+.discover_item{
+		height: 100px;
+		padding: 17px 10px 17px 16px;
+		border: 1px solid #e8e8e8;
+		margin-top: -1px;
+		overflow: visible;
+		position: relative;
+		z-index: 1;
+	}
+.discover_item img{
+		float: left;
+		width: 100px;
+		height: 100px;
+		margin-right: 8px;
+		vertical-align: bottom;
+	}
+	
+	/*效果*/
+.discover_item:hover {
+		z-index: 2;
+	}
+	.discover_item:hover .preference_trigger_wrapper {
+		height: 32px;
+	}
+	
+.item_desc{
+		float: left;
+		width: 112px;
+	}
+.item_desc h4{
+		width: 120px;
+		height: 16px;
+		line-height: 16px;
+		color: #444;
+		font-size: 14px;
+		margin-bottom: 10px;
+		margin-top: 4px;
+		overflow: hidden;
+	}
+.item_comment{
+		position: relative;
+		height: 40px;
+		line-height: 20px;
+		margin-bottom: 8px;
+		color: #737373;
+		overflow: hidden;
+	}
+.item_count{
+		color: #f40;
+	}
+.preference_trigger_wrapper{
+		width: 100%;
+		position: absolute;
+		top: 134px;
+		left: 0px;
+		z-index: 2;
+		height: 0;
+		overflow: hidden;
+		transition-property: height;
+		transition-duration: .2s;
+	}
+.preference_trigger_wrapper ul{
+		height: 30px;
+		line-height: 30px;
+		background-color: #f5f5f5;
+		margin-top: 0;
+	}
+.preference_trigger_wrapper ul  li{
+		float: left;
+		width: 33%;
+		text-align: center;
+	}
+.preference_trigger_wrapper ul  li a{
+		color: #5c5c5c;
+	}
+.preference_trigger_wrapper .show_preference{
+		color: #ff4300;
+	}
+.wall{
+		padding: 20px;
+		border: 1px solid #e8e8e8;
+		border-top: 0;
+		z-index: 1;
+		overflow: hidden;
+		*zoom: 1;
+		margin-top: 10px\9;
+	}
+.wall  .wall_item{
+		position: relative;
+		float: left;
+		display: inline;
+		margin: 1px;
+	}
+.wall  .wall_item img{
+		width: 70px;
+		height: 70px;
+		
+	}
+	
+.wall_item_desc{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 72px;
+		height: 70px;
+		z-index: -1px;
+		overflow: hidden;
+		text-align: center;
+		opacity: 0;
+		word-break: break-all;
+		transition-duration: .3s;
+		/*display: none;*/
+	}
+.wall_item_desc p{
+		width: 50px;
+		height: 34px;
+		line-height: 18px;
+		margin-top: 8px;
+		margin-left: 10px;
+		color: #fff;
+		overflow: hidden;
+	}
+.wall_item_desc	.item_count{
+		width: 50px;
+		margin-top: 6px;
+		margin-left: 10px;
+		color: #fff;
+		font-size: 13px;
+		
+	}
+.wall .wall_item:hover .wall_item_desc {
+    	display: block;
+    	z-index: 3;
+		opacity: 1;
+  		background-color: #ff4401;
+}
+.preference_btn{
+		position: absolute;
+		top: 20px;
+		right: 15px;
+		border: 1px solid #ff4300;
+		background-color: #fff;
+		line-height: 14px;
+		padding: 2px 4px;
+		transition-duration: .2s;
+		z-index: 2;
+		color: #ff4300;
+	}
+.preference_btn:hover{
+		background-color: #ff4300;
+		color: #fff;
+	}
+.change_wrapper{
+		padding: 8px 0;
+		background-color: #fff;
+		color: #737373;
+		border: 1px solid #e8e8e8;
+		border-top: 0;
+	}
+.change_wrapper:hover{
+		color: #f40;
+		background-color: #fff;
+	}
+.change_wrapper .s_change_gray{
+		width: 15px;
+		height: 17px;
+		margin-left: 86px;
+		margin-right: 7px;
+		background: url(../images/spricte.png) no-repeat -100px -380px;
+		display: inline-block;
+		vertical-align: middle;
+		zoom: 1;
+		text-indent: -2000px;
+	}
+.change_wrapper:hover .s_change_gray{
+		background-position: -100px -400px;
+	}
+
+
+.shop_dt{
+		margin-top: 14px;
+	}
+.s_good_shop{
+		background: url(../images/spricte.png) no-repeat -250px -100px;
+		display: inline-block;
+		vertical-align: middle;
+		zoom: 1;
+	}
+	
+.shop_content{
+		background-color: #fff;
+	}
+.discover .shop{
+		border: 1px solid #e8e8e8;
+		margin-top: -1px;
+		position: relative;
+		z-index: 1;
+		padding: 13px 14px 14px;
+		color: #747474;
+	}
+.discover .shop:hover{
+		border: 1px solid #f40;
+		z-index: 2;
+	}
+.discover	.shop_logo{
+		display: -moz-inline-stack;
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		margin-right: 10px;
+		border-radius: 40px;
+		text-indent: 0;
+		vertical-align: middle;
+		*vertical-align: auto;
+		zoom: 1;
+		*display: inline;
+	}
+.s_discover_logo{
+		background: url(../images/spricte.png) no-repeat -150px -145px;
+	}
+.discover	.shop_logo img{
+		background-image: url(../images/inter.jpg);
+		width: 40px;
+		height: 40px;
+		border-radius: 40px;
+	}
+.discover .shop_desc{
+		display: -moz-inline-stack;
+		display: inline-block;
+		vertical-align: middle;
+		*vertical-align: auto;
+		zoom: 1;
+		*display: inline;
+		color: #444;
+	}
+.discover .shop_desc h4{
+		font-size: 14px;
+		width: 170px;
+		height: 18px;
+		overflow: hidden;
+	}
+.discover .shop_desc p{
+		margin-top: 8px;
+		line-height: 14px;
+		color: #6c6c6c;
+	}
+.shop_comment{
+		margin-top: 10px;
+		height: 22px;
+		position: relative;
+		color: #ccc;
+	}
+.discover ul{
+		overflow: hidden;
+	}
+.discover ul li{
+		position: relative;
+		display: inline;
+		float: left;
+		/*margin: 0 3px;*/
+	}
+.discover ul li img{
+		width: 70px;
+		height: 70px;
+	}
+.shop_comment span{
+		display: inline-block;
+		vertical-align: middle;
+		zoom: 1;
+		color: #6c6c6c;
+		border-right: 1px solid #eaeaea;
+		padding-right: 6px;
+		margin-right: 6px;
+		line-height: 14px;
+	}
+.discover_gg{
+		width: 300px;
+		height: 250px;
+		overflow: hidden;
+		margin-left: -12px;
+		margin-top: 15px;
+	}
+
+
+.channel{
+		height: 365px;
+		clear: both;
+	}
+.channel-item{
+		position: relative;
+		float: left;
+		z-index: 1;
+		padding: 14px;
+		width: 169px;
+		height: 335px;
+		border: 1px solid #e8e8e8;
+		margin-left: -1px;
+		color: #3c3c3c;
+		line-height: 13px;
+	}
+.channel-item:hover{
+		border: 1px solid #f40;
+		z-index: 10;
+	}
+.channel-header{
+		height: 20px;
+		margin-bottom: 7px;
+		color: #6c6c6c;
+		overflow: hidden;
+	}
+.channel-item .channel-header .fpicon{
+		height: 16px;
+		margin-right: 6px;
+	}
+.fpicon{
+		display: inline-block;
+		vertical-align: middle;
+		zoom: 1;
+		text-indent: -2000em;
+	}
+.channel-header .s-star{
+		width: 32px;
+		background: url(../images/spricte.png) no-repeat 0 -245px;
+	}
+.channel-header .g-u{
+		display: inline-block;
+		vertical-align: middle;
+		zoom: 1;
+		color: #f40;
+		font-style: normal;
+		margin-bottom: -3px;
+	}
+.channel-main img{
+		width: 169px;
+		height: 100px;
+	}
+.channel-main .pic-desc{
+		display: block;
+		height: 32px;
+		padding: 7px 10px 9px;
+		background-color: #f5f5f5;
+		text-align: center;
+	}
+.pic-desc em{
+		display: block;
+		height: 15px;
+		line-height: 15px;
+		color: #3c3c3c;
+		font-size: 12px;
+		font-weight: bolder;
+		font-style: normal;
+		margin-bottom: 5px;
+		overflow: hidden;
+	}
+.pic-desc span{
+		display: block;
+		height: 14px;
+		line-height: 13px;
+		color: #9c9c9c;
+		overflow: hidden;
+	}
+.channel-item .channel-extra{
+		margin-top: 13px;
+	}
+.channel-item .pics{
+		width: 169px;
+		overflow: hidden;
+	}
+.channel-item .pics .g-u{
+		display: block;
+		float: left;
+		width: 70px;
+		margin-left: 6px;
+		margin-right: 5px;
+		vertical-align: middle;
+		zoom: 1;
+	}
+.channel-item .pics img{
+		width:70px;
+		height: 70px;
+	}
+.channel-item .pics .pic-desc{
+		margin-top: 5px;
+		height: 16px;
+		line-height: 16px;
+		text-align: center;
+	}
+.channel-item .channel-tag,.channel-extra .article-title{
+		width: 169px;
+		height: 18px;
+		line-height: 18px;
+		margin-top: 8px;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+.channel-item .channel-tag a{
+		margin-right: 2px;
+		padding-right: 5px;
+		border-right: 1px solid #e1e1e1;
+	}
+.channel-item .channel-tag a:last-child{
+		border-right: 0;
+		padding-right: 0;
+		margin-right: 0;
+	}
+.channel-item .article-title .tag{
+		color: #e1e1e1;
+		margin-right: 3px;
+	}
+.article-title .tag em{
+		color: #f40;
+		font-style: normal;
+	}
+.channel-item .s-world{
+		width: 47px;
+		background: url(../images/spricte.png) no-repeat 0 -185px;
+	}
+.channel-tag .g-u{
+		display: inline-block;
+	}
+.channel-tag .g-u img{
+		width: 20px;
+		height: 15px;
+	}
+.channel-item .s-auction{
+		width: 47px;
+		background: url(../images/spricte.png) no-repeat 0 -145px;
+	}
+.channel-item .s-daily{
+		width: 64px;
+		background: url(../images/spricte.png) no-repeat 0 -225px;
+	}
+.channel-item .s-girl{
+		width: 47px;
+		background: url(../images/spricte.png) no-repeat 0 -205px;
+	}
+.channel-item .s-travel{
+		width: 64px;
+		background: url(../images/spricte.png) no-repeat 0 -165px;
+	}
+.travel-whither{
+		position: relative;
+		width: 152px;
+		height: 72px;
+		border: 1px solid #e8e8e8;
+		margin-top: 14px;
+		padding: 8px;
+	}
+.travel-whither div{
+		width: 70px;
+		height: 32px;
+		overflow: hidden;
+		float: left;
+		line-height: 15px;
+		text-align: right;
+		margin: 20px 0;
+		margin-right: 6px;
+	}
+.travel-whither a{
+		 display:inline-block;
+		 width: 152px;
+		height: 72px;
+		text-align: center;
+	}
+.travel-whither img{
+		width: 70px;
+		height: 70px;
+		float: right;
+	}
+.travel-whither h5{
+		font-size: 15px;
+		color: #323232;
+		white-space: nowrap;
+	}
+.travel-whither p{
+		color: #767676;
+		margin-top: 4px;
+		line-height: 13px;
+	}
+.travel-whither .s-hot{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 34px;
+		height: 36px;
+		background: url(../images/spricte.png) no-repeat -150px -380px;
+	}
+	
+	
+.screen-ft .sale{
+		padding-top: 20px;
+		clear: both;
+		*zoom: 1;
+	}
+.screen-ft .sale-hd{
+		margin-bottom: 20px;
+		overflow: hidden;
+		*zoom: 1;
+	}
+.sale-hd h3{
+		display: inline;
+		float: left;
+		width: 71px;
+		height: 0;
+		overflow: hidden;
+		padding-top: 17px;
+	}
+.sale-hd .s-sale{
+		background: url(../images/spricte.png) no-repeat 0 -360px;
+	}
+.sale-hd .sale-p4p{
+		display: block;
+		float: right;
+		height: 20px;
+		line-height: 20px;
+		overflow: hidden;
+	}
+.sale-hd .sale-p4p a{
+		display: inline;
+		float: left;
+		padding: 0 10px;
+	}
+.screen-ft .sale-bd{
+		height: 436px;
+		overflow: hidden;
+	}
+.sale-bd li{
+		display: inline;
+		float: left;
+		margin-bottom: 30px;
+		width: 14.28571%;
+	}
+.sale-bd .mod{
+		position: relative;
+		width: 140px;
+		height: 188px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+.sale-bd .mod .mod-hd img{
+		width: 120px;
+		height: 120px;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+.sale-bd .mod .mod-hd strong{
+		display: block;
+		height: 20px;
+		line-height: 20px;
+		font-weight: 400;
+		overflow: hidden;
+	}
+.mod-bd{
+		overflow: hidden;
+		color: #f40;
+		 *zoom: 1
+	}
+.mod-bd span,.mod-bd strong,.mod-bd i{
+		display: inline;
+		float: left;
+		margin-right: 5px;
+	}
+.mod-bd strong{
+		font-weight: 400;
+	}
+.mod-bd i{
+		margin-top: 3px;
+		width: 26px;
+		height: 14px;
+		background: url(../images/spricte.png) no-repeat -150px -430px;
+	}
+.mod-ft{
+		color: #9c9c9c;
+	}
+.mod-ft span{
+		color: #9c9c9c;
+		text-decoration: line-through;
+	}
+.mod-ft strong{
+		text-decoration: line-through;
+		font-weight: 400;
+	}
+.mod-ft .pipe{
+		padding: 0 5px;
+		font-style: normal;
+		color: #e8e8e8;
+	}
+.gg{
+		width: 1150px;
+		height: 90px;
+		overflow: hidden;
+	}
+.gg div{
+		display: inline;
+		float: left;
+		margin-right: 20px;
+	}
+.gg ins{
+		display: inline-block;
+		width: 728px;
+		height: 90px;
+		padding: 0;
+		margin: 0;
+		*zoom: 1;
+		*display: inline;
+	}
+.helper{
+		margin-top: 15px;
+		padding: 30px 0;
+		border-top: 1px solid #e8e8e8;
+		overflow: hidden;
+	}
+.helper .mod{
+		display: inline;
+		float: left;
+		margin-right: -1px;
+		width: 25%;
+	}
+.mod .mod-wrap{
+		padding: 0 25px;
+		border-right: 1px solid #e8e8e8;
+		overflow: hidden;
+		*zoom: 1;
+	}
+.mod .mod-wrap h4{
+		margin-bottom: 5px;
+		overflow: hidden;
+		*zoom: 1;
+	}
+.s-adults,.s-new-p,.s-pay,.s-tb-s{
+		display: inline;
+		float: left;
+		margin-top: 15px;
+		margin-bottom: 10px;
+		height: 0;
+		padding-top: 17px;
+		width: 80px;
+		overflow: hidden;
+		background: url(../images/spricte.png) no-repeat 0 -275px;
+		*zoom: 1;
+	}
+.s-new-p{
+		background-position: 0 -295px;
+	}
+.s-pay{
+		background-position: 0 -315px;
+	}
+.s-tb-s{
+		background-position: 0 -335px;
+	}
+.mod .mod-wrap li{
+		display: inline-block;
+		*vertical-align: auto;
+		zoom: 1;
+		*display: inline;
+		margin-right: 10px;
+		float: none;
+		width: auto;
+		height: 21px;
+		line-height: 21px;
+		overflow: hidden;
+	}
+.mod .mod-wrap li a{
+		color: #9c9c9c;
+	}
+.mod .mod-wrap li a:hover{
+		color: #f40;
+	}
+.footer{
+		position: relative;
+		padding-top: 7px;
+		padding-bottom: 9px;
+		border-top: 1px solid #ddd;
+		_margin-top: 20px;
+		width: 100%;
+	}
+.footer .footer-hd{
+		width: 1190px;
+		height: 36px;
+		line-height: 36px;
+		border-bottom: 1px solid #ddd;
+	}
+.footer .footer-hd p{
+		margin-bottom: 8px;
+		line-height: 27px;
+	}
+.footer-hd p,.footer-bd p{
+		overflow: hidden;
+	}
+.footer .footer-hd a,.footer-bd a{
+		display: inline;
+		float: left;
+		margin: 0 4px;
+		white-space: nowrap;
+		color: #6c6c6c;
+	}
+.footer .footer-hd a:hover{
+		color: #f40;
+		text-decoration: none;
+	}
+.footer .footer-bd a:hover{
+		color: #f40;
+		text-decoration: none;
+	}
+.footer .footer-hd b{
+		display: inline;
+		float: left;
+		margin: 0 3px;
+		font-weight: 400;
+		color: #ddd;
+	}
+.footer .footer-bd{
+		width: 1190px;
+		height: 52px;
+		line-height: 20px;
+		margin-top: 10px;
+	}
+.footer .footer-bd span{
+		margin: 0 4px;
+		color: #9c9c9c;
+	}
+.footer-ft a{
+		display: inline-block;
+	}
+.footer-ft .mod{
+		height: 40px;
+	}
+.footer-ft .mod img{
+		width: 36px;
+		height: 36px;
+	}
+.footer-ft .mod-a,.footer-ft .mod-b,.footer-ft .mod-c,
+.footer-ft .mod-d,.footer-ft .mod-e{
+		width: 30px;
+		background: url(../images/spete.png) 0 -140px;
+	}
+.footer-ft .mod-b{
+		width: 33px;
+		background-position: -40px -140px;
+	}
+.footer-ft .mod-c{
+		width: 50px;
+		background-position: -80px -140px;
+	}
+.footer-ft .mod-d{
+		width: 83px;
+		background-position: -140px -140px;
+	}
+.footer-ft .mod-e{
+		width: 94px;
+		background-position: -240px -140px;
+	}
